@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Marri Pasandida Auratt Jiii — Ashiiii 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fce3ec, #f9d8ff, #e0bbff);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #d63384;
+      margin-top: 60px;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff9ef2; }
+      to { text-shadow: 0 0 20px #ff4f9a; }
+    }
+    .section {
+      max-width: 700px;
+      margin: 40px auto;
+      background: rgba(255,255,255,0.7);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      backdrop-filter: blur(8px);
+    }
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .countdown {
+      font-size: 1.4rem;
+      color: #6f42c1;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    footer {
+      margin: 40px 0;
+      color: #444;
+      font-size: 1rem;
+    }
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .heart {
+      position: absolute;
+      color: #ff6fb5;
+      animation: float 6s linear infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(0.5); opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hearts"></div>
+
+  <h1>Happy Birthday Marri Pasandida Auratt Jiii — Marri Sohniii Ashiiii 💖</h1>
+  
+  <div class="section">
+    <p>Marri Piyarriii Ashiiii,</p>
+    <p>
+      Is khoobsurat din — <strong>8th November</strong> — par dil se dua hai ke har khushi, har muskurahat  
+      Marri Muhtarmaaa Jiii ke kadmoon mein aaye.  
+      Duniya ki sabse pyari rooh, sabse khoobsurat dil — wahi hai, Marri Sohniii Ashiiii.  
+      Kuch ghaltiyaan hui, kuch baatein dil ko chhool gayi — hr waqat yahi dua krta huu ky  In shaa allah
+      sab jaldi jaldi thek hoo ghayy.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Yaadein Jo Dil Mein Bas Gayi 💫</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/200x200/?love,couple" alt="Memory 1">
+      <img src="https://source.unsplash.com/200x200/?heart,flowers" alt="Memory 2">
+      <img src="https://source.unsplash.com/200x200/?stars,sky" alt="Memory 3">
+      <img src="https://source.unsplash.com/200x200/?smile,happiness" alt="Memory 4">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Birthday Countdown 🎉</h2>
+    <div class="countdown" id="countdown"></div>
+  </div>
+
+  <div class="section">
+    <h2>Dil Se Likhe Alfaaz 💌</h2>
+    <p>
+      Marri Pasandida Auratt Jiii, dil se maafi chahta hoon un sab baton ke liye  
+      jinhon ne Marri Piyarriii Ashiiii ke dil ko dukhaya.  
+      Har subah aur har raat bas yahi dua nikalti hai —  
+      ke Marrii Muhtarmaaa Jiii khush rahyynn, muskurati rahyynn.  
+      Marri zindagi ka sabse khoobsurat hissa wahi haii jis mnn app sathh haii orr apki khushii,  
+      Marri Sohniii Ashiiii, jo dil ka sukoon hai. 
+      Marrii duaoon mn bss yahii haii ky jaldiii 
+     hamryy Viyaah ky liyaa Naikk rassty bantyy ghaynn hamrri neeyat saaf haii toh 
+     In shaa Allah hum jaldii AIK hoo ghayynn ghayy In shaa Allah
+
+      <br><br>
+      <strong>Happy Birthday, Marri Pasandida Auratt Jiii 💖</strong>  
+      Har saans mein sirf ek hi naam ghoomta hai — *Ashiiii... Ashiiii... Ashiiii...*
+    </p>
+  </div>
+
+  <footer>
+    Banaya ghaya dil se, Marri Pasandida Auratt Jiii ke liye — sirf aur sirf mohabbat ke saath 💞
+  </footer>
+
+  <script>
+    // Floating hearts animation
+    const heartsContainer = document.querySelector('.hearts');
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      heartsContainer.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 400);
+
+    // Countdown to 8 November
+    const countdownEl = document.getElementById('countdown');
+    function updateCountdown() {
+      const birthday = new Date('2025-11-08T00:00:00');
+      const now = new Date();
+      const diff = birthday - now;
+      if (diff <= 0) {
+        countdownEl.innerHTML = "🎂 Aaj ka din sirf Marri Ashiiii ka hai! Happy Birthday Marri Muhtarmaaa Jiii 💖";
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s baqi hain Marri Piyarriii Ashiiii ke din ke liye 💕`;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>
